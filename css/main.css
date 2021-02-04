@@ -1,0 +1,114 @@
+body {
+ width: 80vw;  /*  sets the width of the <body> element to 80% of the viewport width */
+ margin: auto;  /*  centers the <body> element in the viewport */
+}
+
+.logo {
+  display: flex;  /*  turns the logo box into a flex container so that the logo and the header text will align horizontally and be resposnive */
+  justify-content: flex-start;
+  align-items: center;
+
+  border-bottom: 5px solid black;
+  margin: 1rem;
+}
+
+.logo_img {
+  max-width: 10vw; /* maximum width of logo, responding to the viewport size */
+  max-height: 20vw;  /*  minimum height of logo, responding to the viewport size */
+
+  min-width: 100px;  /*  minimum width and height in absolute values to stop shrinking of logo with shrinking viewport */
+  min-height: 250px;
+
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: 1rem;
+}
+
+.logo_text {
+    font-size: clamp(26px, 5vw, 54px);  /*  clamp so header text decreases in size with shirinking viewport */
+    font-family: monospace;
+}
+
+.main_content_container {
+  display: flex;  /* turns the gallery and icons boxes into flex items for responsiveness */
+  flex-wrap: wrap;  /*  wraps the items so that they go to one column on mobile devices */
+  justify-content: center;
+}
+
+.gallery {
+  flex: 1 1 480px;  /* makes the gallery box grow past 480px, shrink below 480px, and for some reason, it wraps at 480px --  research flexbox */
+
+  text-align: center;
+  font-family: monospace;
+
+  margin: 1rem;
+}
+
+.images {
+  display: grid;  /* changes the images div to a grid container */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* ??? */
+  justify-items: center; /* centers the grid items for mobile display */
+  grid-gap: 5px;
+}
+
+.gallery_img {
+  border-radius: 15px;
+
+  height: 175px;
+  width: 250px;
+}
+
+figcaption {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.links {
+  flex: 0 1 200px;  /*  makes the icons box grow as the screen size increases */
+}
+
+.icons {
+  display: grid;  /* turns the icon links section into a grid container with the <div> elements as grid items */
+  grid-template-rows: 1fr 1fr 1fr; /* sets up three rows */
+}
+
+.link_card {
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 25px;
+
+  font-family: monospace;
+
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.75rem;
+}
+
+.link_card a:hover {
+  color: white;
+}
+
+.fas {
+  font-size: 64px;
+  padding: 2rem;
+}
+
+.fab {
+  font-size: 64px;
+  padding: 2rem;
+}
+
+a {
+  color: black;
+}
+
+.footer {
+  font-size: 16px;
+  text-align: center;
+  border-top: 5px solid black;
+  margin: 1rem;
+}
+
+.footer p {
+  font-family: monospace;
+}
