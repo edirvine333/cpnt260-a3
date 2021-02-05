@@ -55,6 +55,7 @@ body {
 .logo_text_one {
     font-size: clamp(24px, 5vw, 68px);  /*  clamp so header text decreases in size with shirinking viewport */
     font-family: "Bangers", Georgia, monospace;
+    text-shadow: 7.5px 7.5px 5px grey;
 }
 
 .logo_text_two {
@@ -115,6 +116,7 @@ figcaption {
   background-color: lightgrey;
   border: 1px solid black;
   border-radius: 25px;
+  box-shadow: 7.5px 7.5px 5px 2px lightgrey;
 
   font-family: "Permanent Marker", Georgia, monospace;
 
