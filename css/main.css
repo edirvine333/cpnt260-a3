@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Permanent+Marker&display=swap');
+
 body {
- width: 80vw;  /*  sets the width of the <body> element to 80% of the viewport width */
+ width: 85vw;  /*  sets the width of the <body> element to 80% of the viewport width */
  margin: auto;  /*  centers the <body> element in the viewport */
+}
+
+.grad_box_left {
+  background: linear-gradient(to left, white, black);  /* sourced from MDN, creativity attribute to Tony Grimes!! */
+
+  min-height: 250px;
+  min-width: 20px;
+
+  height: 20vw;
+  width: 20vw;
+
+  margin-right: 2rem;
 }
 
 .logo {
@@ -12,6 +26,18 @@ body {
   margin: 1rem;
 }
 
+.grad_box_right {
+  background: linear-gradient(to right, white, black);  /* sourced from MDN, creativity attribute to Tony Grimes !! */
+
+  min-height: 250px;
+  min-width: 20px;
+
+  height: 20vw;
+  width: 20vw;
+  
+  margin-left: 2rem;
+}
+
 .logo_img {
   max-width: 10vw; /* maximum width of logo, responding to the viewport size */
   max-height: 20vw;  /*  minimum height of logo, responding to the viewport size */
@@ -21,12 +47,19 @@ body {
 
   padding-right: 2rem;
   padding-left: 2rem;
-  margin: 1rem;
+
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-.logo_text {
-    font-size: clamp(26px, 5vw, 54px);  /*  clamp so header text decreases in size with shirinking viewport */
-    font-family: monospace;
+.logo_text_one {
+    font-size: clamp(36px, 5vw, 68px);  /*  clamp so header text decreases in size with shirinking viewport */
+    font-family: "Bangers", Georgia, monospace;
+}
+
+.logo_text_two {
+  font-size: clamp(24px, 5vw, 36px);  /*  clamp so header text decreases in size with shirinking viewport */
+  font-family: "Bangers", Georgia, monospace;
 }
 
 .main_content_container {
@@ -39,9 +72,15 @@ body {
   flex: 1 1 480px;  /* makes the gallery box grow past 480px, shrink below 480px, and for some reason, it wraps at 480px --  research flexbox */
 
   text-align: center;
-  font-family: monospace;
+  font-family: "Caveat", Georgia, monospace;
 
   margin: 1rem;
+}
+
+.gallery h1 {
+  font-size: 48px;
+
+  margin: .75rem;
 }
 
 .images {
@@ -59,8 +98,8 @@ body {
 }
 
 figcaption {
-  font-size: 18px;
-  font-family: monospace;
+  font-size: 22px;
+  font-family: "Caveat", Georgia, monospace;
 }
 
 .links {
@@ -77,7 +116,7 @@ figcaption {
   border: 1px solid black;
   border-radius: 25px;
 
-  font-family: monospace;
+  font-family: "Permanent Marker", Georgia, monospace;
 
   text-align: center;
   padding: 0.5rem;
@@ -110,5 +149,5 @@ a {
 }
 
 .footer p {
-  font-family: monospace;
+  font-family: "Permanent Marker", Georgia, monospace;
 }
