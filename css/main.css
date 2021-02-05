@@ -14,12 +14,12 @@ body {
   height: 20vw;
   width: 20vw;
 
-  margin-right: 2rem;
+  margin-right: 2vw;
 }
 
 .logo {
   display: flex;  /*  turns the logo box into a flex container so that the logo and the header text will align horizontally and be resposnive */
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   border-bottom: 5px solid black;
@@ -35,30 +35,30 @@ body {
   height: 20vw;
   width: 20vw;
   
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 .logo_img {
   max-width: 10vw; /* maximum width of logo, responding to the viewport size */
-  max-height: 20vw;  /*  minimum height of logo, responding to the viewport size */
+  max-height: 20vw;  /*  maximum height of logo, responding to the viewport size */
 
-  min-width: 100px;  /*  minimum width and height in absolute values to stop shrinking of logo with shrinking viewport */
-  min-height: 250px;
+  min-width: 75px;  /*  minimum width and height in absolute values to stop shrinking of logo with shrinking viewport */
+  min-height: 200px;
 
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
 
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
 .logo_text_one {
-    font-size: clamp(36px, 5vw, 68px);  /*  clamp so header text decreases in size with shirinking viewport */
+    font-size: clamp(24px, 5vw, 68px);  /*  clamp so header text decreases in size with shirinking viewport */
     font-family: "Bangers", Georgia, monospace;
 }
 
 .logo_text_two {
-  font-size: clamp(24px, 5vw, 36px);  /*  clamp so header text decreases in size with shirinking viewport */
+  font-size: clamp(18px, 5vw, 36px);  /*  clamp so header text decreases in size with shirinking viewport */
   font-family: "Bangers", Georgia, monospace;
 }
 

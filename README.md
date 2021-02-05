@@ -9,11 +9,12 @@ Repository Maintainer: Ed Irvine
 ## NOTES  
 
 1.  Responsive design, with devops limitation of 450px on minimum window size...  a problem that I have yet to figure out :(  
+2.  HTML validation shows warnings regarding missing header in each section.   
 
 ## ATTRIBUTIONS  
 
 - gallery grid responsiveness achieved by experimenting with repeat, auto-fill, and minmax(), as detailed in the book [HTML5/CSS3](https://www.murach.com/shop/murachs-html5-and-css3-4th-edition-detail) by [Murach Publishing](https://www.murach.com/).  
--  .svg logo by author.  
+-  .png logo by author.  
 - image from [Pixabay](https://pixabay.com)  
   - Photographer: [PIRO](https://pixabay.com/users/piro4d-2707530/)  
   - Photo Link: [electric_guitar_pic](https://pixabay.com/photos/guitar-electric-guitar-2925274/) 
