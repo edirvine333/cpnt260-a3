@@ -9,7 +9,8 @@ Repository Maintainer: Ed Irvine
 ## NOTES  
 
 1.  Responsive design, with devops limitation of 450px on minimum window size...  a problem that I have yet to figure out :(  
-2.  HTML validation shows warnings regarding missing header in each section.   
+2.  HTML validation shows warnings regarding missing header in each section.  
+3.  linear-gradient() attribute used for header, with 97.64% browser compatability.  May not operate properly on a Safari dekstop or mobile browser. 
 
 ## ATTRIBUTIONS  
 
